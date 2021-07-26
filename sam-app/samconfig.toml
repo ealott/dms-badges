@@ -1,0 +1,21 @@
+version = 0.1
+[dms]
+[dms.deploy]
+[dms.deploy.parameters]
+stack_name = "BadgesAPI"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-w8ys32ucsgok"
+s3_prefix = "BadgesAPI"
+region = "us-east-1"
+confirm_changeset = false
+capabilities = "CAPABILITY_IAM"
+
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "BadgesAPI"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1ahxqfxwk8vu1"
+s3_prefix = "BadgesAPI"
+region = "us-east-1"
+profile = "dms"
+confirm_changeset = false
+capabilities = "CAPABILITY_IAM"
