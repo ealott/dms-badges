@@ -16,7 +16,7 @@ class Settings(BaseSettings):
     #LDAP_URL: str = "ldap://ad.dallasmakerspace.org"
     #LDAP_UN: str = "cn=jwtest_svc,ou=service,ou=users,ou=admin,dc=dms,dc=local"
     #LDAP_PW: str = ""
-    BACKEND_CORS_ORIGINS: List[AnyHttpUrl] = []
+    BACKEND_CORS_ORIGINS: List[AnyHttpUrl] = ['http://evanlott.com','http://dallasmakerspace.org','https://dallasmakerspace.org'] #TODO: move to env var
     @validator("BACKEND_CORS_ORIGINS", pre=True)
     def assemble_cors_origins(cls, v: Union[str, List[str]]) -> Union[List[str], str]:
         if isinstance(v, str) and not v.startswith("["):
