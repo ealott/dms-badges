@@ -21,4 +21,4 @@ async def homepage(
     ):
     return HTMLResponse('<h1>Hello World</h1>')
 
-handler = Mangum(app, enable_lifespan = False)
+handler = Mangum(app)
