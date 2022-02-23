@@ -10,3 +10,4 @@ coverage.xml
 venv/pyvenv.cfg
 sam-app/.aws-sam/build.toml
 venv/
+sam-app/.aws-sam/
