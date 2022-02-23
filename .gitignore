@@ -7,3 +7,6 @@ id_rsa*
 .pytest*
 *.coverage
 coverage.xml
+venv/pyvenv.cfg
+sam-app/.aws-sam/build.toml
+venv/
