@@ -23,7 +23,7 @@ Resources:
       Environment:
         Variables:
           LDAP_DN: CN=badge_api_svc,OU=Service,OU=Users,OU=Admin,DC=dms,DC=local
-          LDAP_PW: AQICAHhIdIUOIKfojkpqOgOBh2RBPq2kZFJO2tOWaGvGRycU9QGSqbvraOMUCBIbic5Zt06CAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQM9JgxH3UB9H3aQ+aWAgEQgDsfz3fwGsBbulQS0vmwATyG5r+6bN2sPc40XokXFJvpsfPTf3+EWDSy51qWKB6USRdYmBLU/xUPVQ/HSQ==
+          LDAP_PW: changeme
           LDAP_URL: ldap://ad.dallasmakerspace.org
       Events:
         ApiEvent:
