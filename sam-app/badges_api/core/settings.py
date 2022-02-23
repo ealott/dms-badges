@@ -43,7 +43,7 @@ class Settings(BaseSettings):
     #except Exception as e:
     #    print(e)
 
-    print('LDAP_PW_Length: ' + LDAP_PW.length())
+    print('LDAP_PW_Length: ' + LDAP_PW.len())
     print('Configured LDAP_URL: ' + LDAP_URL)
     print('LDAP_DN: ' + LDAP_UN)
 
