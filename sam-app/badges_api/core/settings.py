@@ -36,14 +36,14 @@ class Settings(BaseSettings):
     LDAP_URL: str = str(os.getenv('LDAP_URL'))
     LDAP_UN: str = str(os.getenv('LDAP_DN'))
     #LDAP_PW: str = str(get_decrypted_pw()) # need to get env var KMS encryption working
-    LDAP_PW: str = str(os.getenv('LDAP_DN'))
+    LDAP_PW: str = str(os.getenv('LDAP_PW'))
 
     #try: 
     #    LDAP_PW: str = str(get_decrypted_pw())
     #except Exception as e:
     #    print(e)
 
-    print('LDAP_PW: ' + LDAP_PW)
+    print('LDAP_PW_Length: ' + LDAP_PW.length())
     print('Configured LDAP_URL: ' + LDAP_URL)
     print('LDAP_DN: ' + LDAP_UN)
 
